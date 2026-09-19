@@ -1,0 +1,431 @@
+<!DOCTYPE html>
+
+<html lang="en"><head><meta charset="utf-8"/><meta content="width=device-width, initial-scale=1.0, maximum-scale=1.0, user-scalable=no, viewport-fit=cover" name="viewport"/><link href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:opsz,wght,FILL,GRAD@20..48,100..700,0..1,-50..200" rel="stylesheet"/><link href="https://fonts.googleapis.com" rel="preconnect"/><link crossorigin="" href="https://fonts.gstatic.com" rel="preconnect"/><link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700&amp;display=swap" rel="stylesheet"/>
+<link href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:wght,FILL@100..700,0..1&amp;display=swap" rel="stylesheet"/><script src="https://cdn.tailwindcss.com"></script><script id="tailwind-config">tailwind.config = { darkMode: "class", theme: { extend: { "colors": { "outline-variant": "#bccbb9", "surface-variant": "#d3e4fe", "error": "#ba1a1a", "surface": "#f8f9ff", "secondary-fixed-dim": "#bcc7de", "tertiary-fixed-dim": "#ffb95f", "on-tertiary-fixed": "#2a1700", "error-container": "#ffdad6", "on-tertiary-fixed-variant": "#653e00", "surface-container-high": "#dce9ff", "primary-container": "#22c55e", "surface-dim": "#cbdbf5", "on-secondary-fixed-variant": "#3c475a", "tertiary-fixed": "#ffddb8", "inverse-primary": "#4ae176", "on-background": "#0b1c30", "on-primary": "#ffffff", "surface-container-highest": "#d3e4fe", "on-error": "#ffffff", "secondary-fixed": "#d8e3fb", "on-primary-container": "#004b1e", "primary": "#006e2f", "tertiary": "#855300", "inverse-surface": "#213145", "tertiary-container": "#ef9900", "on-secondary-fixed": "#111c2d", "background": "#f8f9ff", "primary-fixed": "#6bff8f", "on-primary-fixed": "#002109", "inverse-on-surface": "#eaf1ff", "surface-tint": "#006e2f", "on-secondary-container": "#586377", "on-tertiary-container": "#5c3800", "on-surface": "#0b1c30", "surface-container-lowest": "#ffffff", "secondary": "#545f73", "on-primary-fixed-variant": "#005321", "on-error-container": "#93000a", "secondary-container": "#d5e0f8", "surface-container-low": "#eff4ff", "surface-container": "#e5eeff", "on-secondary": "#ffffff", "outline": "#6d7b6c", "surface-bright": "#f8f9ff", "primary-fixed-dim": "#4ae176", "on-tertiary": "#ffffff", "on-surface-variant": "#3d4a3d" }, "borderRadius": { "DEFAULT": "0.25rem", "lg": "0.5rem", "xl": "0.75rem", "full": "9999px" }, "spacing": { "space-lg": "1rem", "space-sm": "0.5rem", "gutter": "1rem", "space-xs": "0.25rem", "space-md": "0.75rem", "margin": "1rem", "space-xl": "1.5rem" }, "fontFamily": { "currency-display": ["Inter"], "display-lg": ["Inter"], "body-sm": ["Inter"], "body-md": ["Inter"], "headline-sm": ["Inter"], "label-sm": ["Inter"], "headline-lg": ["Inter"], "label-lg": ["Inter"], "body-lg": ["Inter"] }, "fontSize": { "currency-display": ["28px", { "lineHeight": "34px", "letterSpacing": "-0.03em", "fontWeight": "700" }], "display-lg": ["32px", { "lineHeight": "40px", "letterSpacing": "-0.02em", "fontWeight": "700" }], "body-sm": ["12px", { "lineHeight": "16px", "letterSpacing": "0.01em", "fontWeight": "400" }], "body-md": ["14px", { "lineHeight": "20px", "letterSpacing": "0em", "fontWeight": "400" }], "headline-sm": ["18px", { "lineHeight": "24px", "letterSpacing": "-0.01em", "fontWeight": "600" }], "label-sm": ["11px", { "lineHeight": "14px", "letterSpacing": "0.04em", "fontWeight": "600" }], "headline-lg": ["24px", { "lineHeight": "32px", "letterSpacing": "-0.015em", "fontWeight": "600" }], "label-lg": ["14px", { "lineHeight": "20px", "letterSpacing": "0.01em", "fontWeight": "600" }], "body-lg": ["16px", { "lineHeight": "24px", "letterSpacing": "0em", "fontWeight": "400" }] } } } }</script><style>@layer base{html,body{width:100vw;margin:0;padding:0;}body{overscroll-behavior:none;}.pb-safe{padding-bottom:env(safe-area-inset-bottom,0px);}.pt-safe{padding-top:env(safe-area-inset-top,0px);}main>:first-child{margin-top:0!important;}main>:last-child{margin-bottom:0!important;}}::-webkit-scrollbar{display:none;}</style></head><body class="bg-surface font-body-md text-body-md text-on-surface flex flex-col antialiased min-h-screen"><header class="fixed top-0 w-full z-50 bg-surface/85 backdrop-blur-xl shadow-[0_1px_8px_rgba(0,0,0,0.04)] pt-safe"><div class="h-24 px-margin flex flex-col justify-center gap-space-xs"><div class="flex items-center justify-between"><div class="flex items-center gap-space-sm"><div class="w-9 h-9 rounded-lg bg-primary text-on-primary flex items-center justify-center font-headline-sm text-headline-sm font-bold shadow-[0_2px_8px_rgba(0,110,47,0.2)]"><span class="material-symbols-outlined text-[20px]">account_balance_wallet</span></div><div class="flex flex-col"><div class="flex items-center gap-space-xs"><span class="font-headline-sm text-headline-sm tracking-tight text-on-surface font-bold">HALK</span><span class="font-label-sm text-label-sm text-primary font-bold tracking-wider uppercase px-1.5 py-0.5 rounded-full bg-primary-fixed/40">v1.0</span></div><span class="font-label-sm text-label-sm text-on-surface-variant line-clamp-1">Simple Budgeting for Everyday Life</span></div></div><div class="flex items-center gap-space-sm"><div class="hidden xs:flex items-center gap-1 bg-surface-container px-2 py-1 rounded-full text-on-surface-variant"><span class="material-symbols-outlined text-[13px] text-primary">verified_user</span><span class="font-label-sm text-label-sm font-medium">Local Encrypted</span></div><img alt="Profile" class="w-8 h-8 rounded-full object-cover shadow-[0_1px_4px_rgba(0,0,0,0.1)]" src="https://lh3.googleusercontent.com/aida/AEtjO1X77hGSxG7Mz1_Oat4Z2DDFigkdHxFdQXz49w2R5JuMjuWD2MjKLSw8GkTK3nnNKluPWsOwK2_rrFk20vRdISQEU2EBhzgl4jnkNDBhVHbong3SNptMfcx25XQPLlBYMXhlJedh-dvogEFwPMkDx-3fu5PoP3e5N5h_IsduQGUI37cnnKF2QAa6Ui5XifluI4sDI-TRnTbScTO-KukCb2-SGG6MQMWSdk302D3FWeoyey6Z5gmckpU2pyO1mB0Jf2KBccQ8ZSswnw"/></div></div><div class="flex items-center justify-between"><div class="flex items-center gap-1.5 bg-inverse-surface text-inverse-on-surface px-2 py-0.5 rounded-full text-[10px] font-semibold w-fit tracking-tight"><span class="material-symbols-outlined text-[12px] text-primary-fixed">lock</span><span>100% On-Device • Encrypted</span></div><span class="font-label-sm text-label-sm font-semibold text-secondary uppercase tracking-wider">Analytics</span></div></div></header><main class="flex flex-col relative w-full pt-24 pb-24 px-margin bg-surface"><div class="flex flex-col w-full gap-space-xl">
+<!-- Sub-header & Filter Section -->
+<div class="flex flex-col gap-space-md">
+<div class="flex flex-col">
+<h1 class="font-headline-lg text-headline-lg tracking-tight text-on-surface">Multi-Month Historical Ledger</h1>
+<p class="font-body-md text-body-md text-on-surface-variant">Historical cashflow trends, bucket discipline, and rollover archives</p>
+</div>
+<!-- Timeframe Filters -->
+<div class="flex flex-col gap-space-sm">
+<div class="flex items-center justify-between gap-space-sm overflow-x-auto pb-1">
+<div class="flex items-center gap-1.5 bg-surface-container p-1 rounded-xl">
+<button class="px-3 py-1.5 rounded-lg text-label-sm font-label-sm text-on-surface-variant hover:text-on-surface transition-all">Last 3M</button>
+<button class="px-3.5 py-1.5 rounded-lg text-label-sm font-label-sm bg-inverse-surface text-inverse-on-surface shadow-sm font-semibold transition-all">Last 6M</button>
+<button class="px-3 py-1.5 rounded-lg text-label-sm font-label-sm text-on-surface-variant hover:text-on-surface transition-all">Last 12M</button>
+</div>
+<button class="flex items-center gap-1.5 px-3 py-2 rounded-xl bg-surface-container text-on-surface font-label-sm text-label-sm shadow-sm active:scale-95 transition-transform">
+<span class="material-symbols-outlined text-[16px] text-primary">calendar_month</span>
+<span>Custom Range</span>
+<span class="material-symbols-outlined text-[14px] text-secondary">expand_more</span>
+</button>
+</div>
+<div class="flex items-center gap-1.5 px-2.5 py-1 rounded-lg bg-surface-container-low text-on-surface-variant w-fit text-[11px] font-medium">
+<span class="material-symbols-outlined text-[14px] text-primary">check_circle</span>
+<span>Audited Interval: Oct 01, 2025 – Mar 31, 2026 (6 Months active)</span>
+</div>
+</div>
+</div>
+<!-- Macro Comparison Chart Card -->
+<div class="flex flex-col bg-surface-container-lowest rounded-xl p-space-lg shadow-sm gap-space-lg">
+<div class="flex items-center justify-between">
+<div class="flex flex-col">
+<span class="font-label-sm text-label-sm uppercase tracking-wider text-secondary">Cashflow Trajectory</span>
+<h2 class="font-headline-sm text-headline-sm text-on-surface">Inflow vs. Total Spend</h2>
+</div>
+<div class="flex items-center gap-3">
+<div class="flex items-center gap-1.5">
+<span class="w-2.5 h-2.5 rounded-full bg-primary-container"></span>
+<span class="font-label-sm text-label-sm text-secondary">Surplus</span>
+</div>
+<div class="flex items-center gap-1.5">
+<span class="w-2.5 h-2.5 rounded-full bg-inverse-surface"></span>
+<span class="font-label-sm text-label-sm text-secondary">Spend</span>
+</div>
+</div>
+</div>
+<!-- Chart Representation (Custom Scaled Inline SVG) -->
+<div class="flex flex-col gap-space-xs">
+<div class="w-full h-44 flex items-end justify-between pt-2 px-1">
+<!-- Oct -->
+<div class="flex flex-col items-center gap-1.5 h-full justify-end flex-1">
+<div class="flex items-end gap-1 w-full justify-center h-32">
+<div class="w-3 rounded-t-sm bg-inverse-surface" style="height: 44%;" title="Oct Spend: $8,800"></div>
+<div class="w-3 rounded-t-sm bg-primary-container" style="height: 56%;" title="Oct Surplus: $11,200"></div>
+</div>
+<span class="font-label-sm text-label-sm text-secondary">Oct</span>
+</div>
+<!-- Nov -->
+<div class="flex flex-col items-center gap-1.5 h-full justify-end flex-1">
+<div class="flex items-end gap-1 w-full justify-center h-32">
+<div class="w-3 rounded-t-sm bg-inverse-surface" style="height: 42%;" title="Nov Spend: $8,400"></div>
+<div class="w-3 rounded-t-sm bg-primary-container" style="height: 58%;" title="Nov Surplus: $11,600"></div>
+</div>
+<span class="font-label-sm text-label-sm text-secondary">Nov</span>
+</div>
+<!-- Dec (Bonus spike) -->
+<div class="flex flex-col items-center gap-1.5 h-full justify-end flex-1">
+<div class="flex items-end gap-1 w-full justify-center h-32">
+<div class="w-3 rounded-t-sm bg-inverse-surface" style="height: 56%;" title="Dec Spend: $11,200"></div>
+<div class="w-3 rounded-t-sm bg-primary-container" style="height: 62%;" title="Dec Surplus: $11,300"></div>
+</div>
+<span class="font-label-sm text-label-sm font-semibold text-primary">Dec</span>
+</div>
+<!-- Jan -->
+<div class="flex flex-col items-center gap-1.5 h-full justify-end flex-1">
+<div class="flex items-end gap-1 w-full justify-center h-32">
+<div class="w-3 rounded-t-sm bg-inverse-surface" style="height: 47%;" title="Jan Spend: $9,400"></div>
+<div class="w-3 rounded-t-sm bg-primary-container" style="height: 53%;" title="Jan Surplus: $10,600"></div>
+</div>
+<span class="font-label-sm text-label-sm text-secondary">Jan</span>
+</div>
+<!-- Feb -->
+<div class="flex flex-col items-center gap-1.5 h-full justify-end flex-1">
+<div class="flex items-end gap-1 w-full justify-center h-32">
+<div class="w-3 rounded-t-sm bg-inverse-surface" style="height: 45%;" title="Feb Spend: $8,910"></div>
+<div class="w-3 rounded-t-sm bg-primary-container" style="height: 55%;" title="Feb Surplus: $11,090"></div>
+</div>
+<span class="font-label-sm text-label-sm text-secondary">Feb</span>
+</div>
+<!-- Mar (Current) -->
+<div class="flex flex-col items-center gap-1.5 h-full justify-end flex-1 bg-surface-container-low rounded-lg pt-1">
+<div class="flex items-end gap-1 w-full justify-center h-32">
+<div class="w-3 rounded-t-sm bg-inverse-surface" style="height: 42%;" title="Mar Spend: $8,420"></div>
+<div class="w-3 rounded-t-sm bg-primary-container shadow-sm" style="height: 58%;" title="Mar Surplus: $11,580"></div>
+</div>
+<span class="font-label-sm text-label-sm font-bold text-on-surface">Mar</span>
+</div>
+</div>
+<div class="flex items-center justify-between text-on-surface-variant font-label-sm text-label-sm pt-1 px-1">
+<span>Baseline: $20,000/mo Inflow Avg</span>
+<span class="text-primary font-semibold">Max Surplus: Nov (58%)</span>
+</div>
+</div>
+<!-- Key Historical Metric Badges -->
+<div class="grid grid-cols-3 gap-space-sm pt-2">
+<div class="flex flex-col bg-surface-container-low p-2.5 rounded-xl gap-0.5">
+<span class="font-label-sm text-label-sm text-secondary">Avg Monthly Spend</span>
+<span class="font-headline-sm text-headline-sm font-bold text-on-surface">$8,650</span>
+<span class="text-[10px] text-primary font-semibold flex items-center gap-0.5">
+<span class="material-symbols-outlined text-[12px]">trending_down</span> -2.4% trend
+        </span>
+</div>
+<div class="flex flex-col bg-surface-container-low p-2.5 rounded-xl gap-0.5">
+<span class="font-label-sm text-label-sm text-secondary">Cumul. Surplus</span>
+<span class="font-headline-sm text-headline-sm font-bold text-primary">+$68,100</span>
+<span class="text-[10px] text-on-surface-variant font-medium">100% saved/debt</span>
+</div>
+<div class="flex flex-col bg-surface-container-low p-2.5 rounded-xl gap-0.5">
+<span class="font-label-sm text-label-sm text-secondary">Discipline Score</span>
+<span class="font-headline-sm text-headline-sm font-bold text-on-surface">91.4%</span>
+<span class="text-[10px] text-primary font-semibold flex items-center gap-0.5">
+<span class="material-symbols-outlined text-[12px]">verified</span> High rigor
+        </span>
+</div>
+</div>
+</div>
+<!-- Category Drift & Allocation Trends -->
+<div class="flex flex-col bg-surface-container-lowest rounded-xl p-space-lg shadow-sm gap-space-md">
+<div class="flex items-center justify-between">
+<div class="flex flex-col">
+<span class="font-label-sm text-label-sm uppercase tracking-wider text-secondary">Discipline Audit</span>
+<h3 class="font-headline-sm text-headline-sm text-on-surface">Historical Category Drift</h3>
+</div>
+<span class="px-2 py-0.5 rounded-full bg-primary-fixed text-on-primary-fixed font-label-sm text-label-sm">Consistent</span>
+</div>
+<div class="flex flex-col gap-space-md">
+<!-- Item 1 -->
+<div class="flex flex-col gap-1.5">
+<div class="flex justify-between items-center text-on-surface">
+<span class="font-label-lg text-label-lg">Must-Pay Obligations</span>
+<span class="font-label-lg text-label-lg font-bold">95.8% avg compliance</span>
+</div>
+<div class="w-full h-2 rounded-full bg-surface-container">
+<div class="h-2 rounded-full bg-primary" style="width: 95.8%;"></div>
+</div>
+<span class="font-body-sm text-body-sm text-on-surface-variant">Rock-solid predictable baseline across all 6 reporting cycles</span>
+</div>
+<!-- Item 2 -->
+<div class="flex flex-col gap-1.5">
+<div class="flex justify-between items-center text-on-surface">
+<span class="font-label-lg text-label-lg">Flexible Spend Drift</span>
+<span class="font-label-lg text-label-lg font-bold text-tertiary">±6.4% variance</span>
+</div>
+<div class="w-full h-2 rounded-full bg-surface-container">
+<div class="h-2 rounded-full bg-tertiary-container" style="width: 68%;"></div>
+</div>
+<span class="font-body-sm text-body-sm text-on-surface-variant">Modest expansion in Dec holiday dining, reclaimed in Jan</span>
+</div>
+<!-- Item 3 -->
+<div class="flex flex-col gap-1.5">
+<div class="flex justify-between items-center text-on-surface">
+<span class="font-label-lg text-label-lg">Debt Paydown Acceleration</span>
+<span class="font-label-lg text-label-lg font-bold text-primary">+4.2 mos ahead</span>
+</div>
+<div class="w-full h-2 rounded-full bg-surface-container">
+<div class="h-2 rounded-full bg-primary-container" style="width: 84%;"></div>
+</div>
+<span class="font-body-sm text-body-sm text-on-surface-variant">Extra principal applied regularly via automated rollover sweeps</span>
+</div>
+</div>
+</div>
+<!-- Month-by-Month Archive Cards (Ledger Accordions) -->
+<div class="flex flex-col gap-space-md">
+<div class="flex items-center justify-between">
+<div class="flex flex-col">
+<span class="font-label-sm text-label-sm uppercase tracking-wider text-secondary">Historical Statements</span>
+<h3 class="font-headline-sm text-headline-sm text-on-surface">Monthly Reconciliation Ledger</h3>
+</div>
+<span class="font-label-sm text-label-sm text-on-surface-variant">6 Cycles</span>
+</div>
+<div class="flex flex-col gap-space-sm" id="accordion-group">
+<!-- March 2026 (Current Active) -->
+<div class="flex flex-col bg-surface-container-lowest rounded-xl p-space-md shadow-sm gap-space-sm transition-all">
+<div class="flex items-center justify-between cursor-pointer" onclick="toggleAccordion('mar26-body', 'mar26-icon')">
+<div class="flex items-center gap-space-sm">
+<div class="w-8 h-8 rounded-lg bg-primary/10 text-primary flex items-center justify-center font-bold">
+<span class="material-symbols-outlined text-[18px]">calendar_today</span>
+</div>
+<div class="flex flex-col">
+<span class="font-headline-sm text-headline-sm text-on-surface">March 2026</span>
+<span class="font-label-sm text-label-sm text-primary font-semibold">Active Rolling Period</span>
+</div>
+</div>
+<div class="flex items-center gap-space-sm">
+<span class="px-2 py-0.5 rounded-full bg-primary-fixed text-on-primary-fixed font-label-sm text-label-sm">Active Month</span>
+<span class="material-symbols-outlined text-[20px] text-secondary transition-transform duration-200" id="mar26-icon">expand_more</span>
+</div>
+</div>
+<div class="grid grid-cols-3 gap-1 py-1 text-center bg-surface-container-low rounded-lg">
+<div class="flex flex-col">
+<span class="text-[10px] text-secondary">Inflow</span>
+<span class="font-label-lg text-label-lg font-semibold text-on-surface">$20,000</span>
+</div>
+<div class="flex flex-col">
+<span class="text-[10px] text-secondary">Outflow</span>
+<span class="font-label-lg text-label-lg font-semibold text-on-surface">$8,420</span>
+</div>
+<div class="flex flex-col">
+<span class="text-[10px] text-secondary">Net Surplus</span>
+<span class="font-label-lg text-label-lg font-bold text-primary">+$11,580</span>
+</div>
+</div>
+<!-- Accordion expanded details -->
+<div class="hidden flex-col gap-space-sm pt-2" id="mar26-body">
+<div class="flex justify-between items-center text-body-sm font-body-sm text-on-surface-variant px-1">
+<span>Rollover Target: 100% to Emergency Fund Reserve</span>
+<span class="text-primary font-semibold">Pending End-of-Month</span>
+</div>
+<div class="flex items-center gap-space-sm pt-1">
+<button class="flex-1 py-2 rounded-lg bg-inverse-surface text-inverse-on-surface font-label-sm text-label-sm text-center font-semibold">
+              Live Month Breakdown
+            </button>
+<button class="px-3 py-2 rounded-lg bg-surface-container text-on-surface font-label-sm text-label-sm flex items-center justify-center">
+<span class="material-symbols-outlined text-[16px]">receipt_long</span>
+</button>
+</div>
+</div>
+</div>
+<!-- February 2026 -->
+<div class="flex flex-col bg-surface-container-lowest rounded-xl p-space-md shadow-sm gap-space-sm transition-all">
+<div class="flex items-center justify-between cursor-pointer" onclick="toggleAccordion('feb26-body', 'feb26-icon')">
+<div class="flex items-center gap-space-sm">
+<div class="w-8 h-8 rounded-lg bg-surface-container text-secondary flex items-center justify-center font-bold">
+<span class="material-symbols-outlined text-[18px]">check</span>
+</div>
+<div class="flex flex-col">
+<span class="font-headline-sm text-headline-sm text-on-surface">February 2026</span>
+<span class="font-label-sm text-label-sm text-on-surface-variant">Closed &amp; Reconciled</span>
+</div>
+</div>
+<div class="flex items-center gap-space-sm">
+<span class="px-2 py-0.5 rounded-full bg-surface-container text-secondary font-label-sm text-label-sm">Reconciled to Savings</span>
+<span class="material-symbols-outlined text-[20px] text-secondary transition-transform duration-200" id="feb26-icon">expand_more</span>
+</div>
+</div>
+<div class="grid grid-cols-3 gap-1 py-1 text-center bg-surface-container-low rounded-lg">
+<div class="flex flex-col">
+<span class="text-[10px] text-secondary">Inflow</span>
+<span class="font-label-lg text-label-lg font-semibold text-on-surface">$20,000</span>
+</div>
+<div class="flex flex-col">
+<span class="text-[10px] text-secondary">Outflow</span>
+<span class="font-label-lg text-label-lg font-semibold text-on-surface">$8,910</span>
+</div>
+<div class="flex flex-col">
+<span class="text-[10px] text-secondary">Net Surplus</span>
+<span class="font-label-lg text-label-lg font-bold text-primary">+$11,090</span>
+</div>
+</div>
+<div class="hidden flex-col gap-space-sm pt-2" id="feb26-body">
+<div class="flex justify-between items-center text-body-sm font-body-sm text-on-surface-variant px-1">
+<span>Rollover: $11,090 transferred to Safe Growth Vault</span>
+<span class="text-secondary font-semibold">Tx ID #7842</span>
+</div>
+<div class="flex items-center gap-space-sm pt-1">
+<button class="flex-1 py-2 rounded-lg bg-surface-container text-on-surface font-label-sm text-label-sm text-center font-semibold">
+              View Breakdown
+            </button>
+<button class="flex-1 py-2 rounded-lg bg-surface-container text-on-surface font-label-sm text-label-sm flex items-center justify-center gap-1">
+<span class="material-symbols-outlined text-[16px]">file_download</span>
+<span>Statement</span>
+</button>
+</div>
+</div>
+</div>
+<!-- January 2026 -->
+<div class="flex flex-col bg-surface-container-lowest rounded-xl p-space-md shadow-sm gap-space-sm transition-all">
+<div class="flex items-center justify-between cursor-pointer" onclick="toggleAccordion('jan26-body', 'jan26-icon')">
+<div class="flex items-center gap-space-sm">
+<div class="w-8 h-8 rounded-lg bg-tertiary-fixed text-on-tertiary-fixed flex items-center justify-center font-bold">
+<span class="material-symbols-outlined text-[18px]">swap_horiz</span>
+</div>
+<div class="flex flex-col">
+<span class="font-headline-sm text-headline-sm text-on-surface">January 2026</span>
+<span class="font-label-sm text-label-sm text-tertiary font-semibold">Adjusted Rollover</span>
+</div>
+</div>
+<div class="flex items-center gap-space-sm">
+<span class="px-2 py-0.5 rounded-full bg-tertiary-fixed text-on-tertiary-fixed font-label-sm text-label-sm">-$180 Shortfall to Loan</span>
+<span class="material-symbols-outlined text-[20px] text-secondary transition-transform duration-200" id="jan26-icon">expand_more</span>
+</div>
+</div>
+<div class="grid grid-cols-3 gap-1 py-1 text-center bg-surface-container-low rounded-lg">
+<div class="flex flex-col">
+<span class="text-[10px] text-secondary">Inflow</span>
+<span class="font-label-lg text-label-lg font-semibold text-on-surface">$20,000</span>
+</div>
+<div class="flex flex-col">
+<span class="text-[10px] text-secondary">Outflow</span>
+<span class="font-label-lg text-label-lg font-semibold text-on-surface">$9,400</span>
+</div>
+<div class="flex flex-col">
+<span class="text-[10px] text-secondary">Net Surplus</span>
+<span class="font-label-lg text-label-lg font-bold text-primary">+$10,600</span>
+</div>
+</div>
+<div class="hidden flex-col gap-space-sm pt-2" id="jan26-body">
+<div class="flex justify-between items-center text-body-sm font-body-sm text-on-surface-variant px-1">
+<span>Audit: $180 auxiliary payment added to auto loan amortizer</span>
+<span class="text-tertiary font-semibold">Absorbed</span>
+</div>
+<div class="flex items-center gap-space-sm pt-1">
+<button class="flex-1 py-2 rounded-lg bg-surface-container text-on-surface font-label-sm text-label-sm text-center font-semibold">
+              View Breakdown
+            </button>
+<button class="flex-1 py-2 rounded-lg bg-surface-container text-on-surface font-label-sm text-label-sm flex items-center justify-center gap-1">
+<span class="material-symbols-outlined text-[16px]">file_download</span>
+<span>Statement</span>
+</button>
+</div>
+</div>
+</div>
+<!-- December 2025 -->
+<div class="flex flex-col bg-surface-container-lowest rounded-xl p-space-md shadow-sm gap-space-sm transition-all">
+<div class="flex items-center justify-between cursor-pointer" onclick="toggleAccordion('dec25-body', 'dec25-icon')">
+<div class="flex items-center gap-space-sm">
+<div class="w-8 h-8 rounded-lg bg-primary-fixed text-on-primary-fixed flex items-center justify-center font-bold">
+<span class="material-symbols-outlined text-[18px]">workspace_premium</span>
+</div>
+<div class="flex flex-col">
+<span class="font-headline-sm text-headline-sm text-on-surface">December 2025</span>
+<span class="font-label-sm text-label-sm text-primary font-semibold">Bonus Inflow ($22.5k)</span>
+</div>
+</div>
+<div class="flex items-center gap-space-sm">
+<span class="px-2 py-0.5 rounded-full bg-surface-container text-secondary font-label-sm text-label-sm">Reconciled</span>
+<span class="material-symbols-outlined text-[20px] text-secondary transition-transform duration-200" id="dec25-icon">expand_more</span>
+</div>
+</div>
+<div class="grid grid-cols-3 gap-1 py-1 text-center bg-surface-container-low rounded-lg">
+<div class="flex flex-col">
+<span class="text-[10px] text-secondary">Inflow</span>
+<span class="font-label-lg text-label-lg font-semibold text-on-surface">$22,500</span>
+</div>
+<div class="flex flex-col">
+<span class="text-[10px] text-secondary">Outflow</span>
+<span class="font-label-lg text-label-lg font-semibold text-on-surface">$11,200</span>
+</div>
+<div class="flex flex-col">
+<span class="text-[10px] text-secondary">Net Surplus</span>
+<span class="font-label-lg text-label-lg font-bold text-primary">+$11,300</span>
+</div>
+</div>
+<div class="hidden flex-col gap-space-sm pt-2" id="dec25-body">
+<div class="flex justify-between items-center text-body-sm font-body-sm text-on-surface-variant px-1">
+<span>Year-End Review: $2,500 holiday bonus routed 100% into principal</span>
+<span class="text-primary font-semibold">Zero Leaks</span>
+</div>
+<div class="flex items-center gap-space-sm pt-1">
+<button class="flex-1 py-2 rounded-lg bg-surface-container text-on-surface font-label-sm text-label-sm text-center font-semibold">
+              View Breakdown
+            </button>
+<button class="flex-1 py-2 rounded-lg bg-surface-container text-on-surface font-label-sm text-label-sm flex items-center justify-center gap-1">
+<span class="material-symbols-outlined text-[16px]">file_download</span>
+<span>Statement</span>
+</button>
+</div>
+</div>
+</div>
+</div>
+</div>
+<!-- Historical Visual Snapshot -->
+<div class="relative w-full rounded-xl overflow-hidden bg-surface-container shadow-sm">
+<img class="w-full h-32 object-cover opacity-80 mix-blend-multiply" data-alt="A clean, calm workspace with a brass desk lamp, an organized digital tablet displaying financial ledgers, and a steaming ceramic cup of coffee bathed in soft morning light, evoking disciplined household peace." src="https://lh3.googleusercontent.com/aida-public/AB6AXuAP8khsUUz9pYh9Bm8rvxJnem7up90WP-S-_T9nVwVDlJaaiBE_Q4Re-TTylpW-XVliDNR5RsmzIu3Zq1cNH5JJy-H0aHo2fvmhL_b5RDOQ9V2dfmvbXd9MeCc9p3tlKZfQEzIZxEOzfke0qTfTvDjUwFuGbz4n5MCtSJIZqF6cqKrNld-Yc2d7l24ulGnkjQRHFNBR6wtHOtVIAd9ut_4IRShpVrqMKmdDGKTHiQ5LcyYbTyTiFdGZ"/>
+<div class="absolute inset-0 bg-gradient-to-t from-surface-container-highest via-surface-container/60 to-transparent flex items-end p-space-md">
+<div class="flex items-center justify-between w-full">
+<div class="flex flex-col">
+<span class="font-label-sm text-label-sm text-primary font-bold">Continuous Ledger Health</span>
+<span class="font-headline-sm text-headline-sm text-on-surface">182 Days Documented Without Loss</span>
+</div>
+<span class="material-symbols-outlined text-primary text-[28px]">shield_with_heart</span>
+</div>
+</div>
+</div>
+<!-- Comprehensive Export Bar & Privacy Guarantee -->
+<div class="flex flex-col gap-space-md pt-2">
+<button class="w-full h-12 rounded-lg bg-inverse-surface text-inverse-on-surface font-label-lg text-label-lg font-semibold flex items-center justify-center gap-2 shadow-sm active:scale-[0.99] transition-transform">
+<span class="material-symbols-outlined text-[20px]">picture_as_pdf</span>
+<span>Download Multi-Month Audit (PDF)</span>
+</button>
+<button class="w-full h-12 rounded-lg bg-surface-container text-on-surface font-label-lg text-label-lg font-semibold flex items-center justify-center gap-2 active:scale-[0.99] transition-transform">
+<span class="material-symbols-outlined text-[20px] text-primary">table_chart</span>
+<span>Export Full Historical Ledger (CSV)</span>
+</button>
+<!-- Offline Security Microcopy -->
+<div class="flex items-center justify-center gap-1.5 py-1 text-center text-on-surface-variant">
+<span class="material-symbols-outlined text-[15px] text-primary">lock</span>
+<span class="font-body-sm text-body-sm">All historical snapshots are encrypted locally with AES-256.</span>
+</div>
+</div>
+</div>
+<script>
+  function toggleAccordion(bodyId, iconId) {
+    const body = document.getElementById(bodyId);
+    const icon = document.getElementById(iconId);
+    if (!body || !icon) return;
+
+    if (body.classList.contains('hidden')) {
+      body.classList.remove('hidden');
+      body.classList.add('flex');
+      icon.style.transform = 'rotate(180deg)';
+    } else {
+      body.classList.add('hidden');
+      body.classList.remove('flex');
+      icon.style.transform = 'rotate(0deg)';
+    }
+  }
+
+  // Pre-expand March (Current) on load for user delight
+  document.addEventListener('DOMContentLoaded', () => {
+    const marBody = document.getElementById('mar26-body');
+    const marIcon = document.getElementById('mar26-icon');
+    if (marBody && marIcon) {
+      marBody.classList.remove('hidden');
+      marBody.classList.add('flex');
+      marIcon.style.transform = 'rotate(180deg)';
+    }
+  });
+</script></main><nav class="fixed bottom-0 w-full z-50 pb-safe bg-surface/90 backdrop-blur-xl shadow-[0_-2px_12px_rgba(0,0,0,0.05)]" data-active-classes="text-primary font-bold"><div class="flex justify-around items-center h-20 px-space-xs"><a class="flex flex-col items-center justify-center min-w-[50px] min-h-[44px] h-14 text-on-surface-variant hover:text-on-surface transition-colors gap-0.5" data-path="dashboard" href="#"><span class="material-symbols-outlined text-[22px]">dashboard</span><span class="font-label-sm text-label-sm">Dashboard</span></a><a class="flex flex-col items-center justify-center min-w-[50px] min-h-[44px] h-14 text-on-surface-variant hover:text-on-surface transition-colors gap-0.5" data-path="budget-builder" href="#"><span class="material-symbols-outlined text-[22px]">tune</span><span class="font-label-sm text-label-sm">Builder</span></a><a class="flex flex-col items-center justify-center min-w-[50px] min-h-[44px] h-14 text-on-surface-variant hover:text-on-surface transition-colors gap-0.5" data-path="add-expense" href="#"><div class="w-10 h-10 rounded-full bg-primary text-on-primary flex items-center justify-center shadow-[0_4px_12px_rgba(0,110,47,0.35)] -mt-2"><span class="material-symbols-outlined text-[24px]">add</span></div><span class="font-label-sm text-label-sm mt-0.5">Expense</span></a><a class="flex flex-col items-center justify-center min-w-[50px] min-h-[44px] h-14 text-on-surface-variant hover:text-on-surface transition-colors gap-0.5" data-path="rollover" href="#"><span class="material-symbols-outlined text-[22px]">autorenew</span><span class="font-label-sm text-label-sm">Rollover</span></a><a class="flex flex-col items-center justify-center min-w-[50px] min-h-[44px] h-14 text-on-surface-variant hover:text-on-surface transition-colors gap-0.5" data-path="loans-and-liabilities" href="#"><span class="material-symbols-outlined text-[22px]">account_balance</span><span class="font-label-sm text-label-sm">Liabilities</span></a><a aria-current="page" class="flex flex-col items-center justify-center min-w-[50px] min-h-[44px] h-14 transition-colors gap-0.5 text-primary font-bold" data-path="analytics" href="#"><span class="material-symbols-outlined text-[22px]">trending_up</span><span class="font-label-sm text-label-sm">Analytics</span></a></div></nav></body></html>

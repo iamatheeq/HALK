@@ -1,0 +1,57 @@
+{
+  "expo": {
+    "name": "HALK",
+    "slug": "halk-household-finance-kernel",
+    "version": "1.0.0",
+    "orientation": "portrait",
+    "userInterfaceStyle": "automatic",
+    "icon": "./assets/icon.png",
+    "assetBundlePatterns": [
+      "**/*"
+    ],
+    "ios": {
+      "supportsTablet": false,
+      "bundleIdentifier": "com.halk.financekernel",
+      "infoPlist": {
+        "NSFaceIDUsageDescription": "HALK uses Face ID to protect access to your household financial data."
+      }
+    },
+    "android": {
+      "package": "com.halk.financekernel",
+      "adaptiveIcon": {
+        "foregroundImage": "./assets/adaptive-icon.png",
+        "backgroundColor": "#f8f9ff"
+      },
+      "permissions": [
+        "USE_BIOMETRIC",
+        "USE_FINGERPRINT"
+      ]
+    },
+    "web": {
+      "favicon": "./assets/favicon.png"
+    },
+    "plugins": [
+      [
+        "expo-local-authentication",
+        {
+          "faceIDPermission": "HALK uses Face ID to protect access to your household financial data."
+        }
+      ],
+      "expo-secure-store",
+      "expo-sharing",
+      "expo-sqlite",
+      "expo-status-bar",
+      "expo-font",
+      [
+        "expo-splash-screen",
+        {
+          "backgroundColor": "#f8f9ff",
+          "image": "./assets/splash-icon.png",
+          "imageWidth": 140
+        }
+      ],
+      "@react-native-community/datetimepicker",
+      "expo-document-picker"
+    ]
+  }
+}
